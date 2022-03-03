@@ -12,7 +12,7 @@ public class main {
 
     
     public static void main(String[] args) {
-         double p,l,t,r, tinggi;
+         double pnjg,lbr,tg,jr, tinggi;
         int pilih;
         
         Scanner input = new Scanner (System.in);
@@ -24,11 +24,11 @@ public class main {
         System.out.print("Pilih : "); pilih = input.nextInt();
         
         if(pilih == 1){
-            System.out.print("Masukkan panjang : "); p = input.nextDouble();
-            System.out.print("Masukkan lebar : "); l = input.nextDouble();
-            System.out.print("Masukkan tinggi : "); t = input.nextDouble();
+            System.out.print("Masukkan panjang : "); pnjg = input.nextDouble();
+            System.out.print("Masukkan lebar : "); lbr = input.nextDouble();
+            System.out.print("Masukkan tinggi : "); tg = input.nextDouble();
             
-            balok balok = new balok(p,l,t);
+            balok balok = new balok(pnjg,lbr,tg);
 
             System.out.println("Keliling persegi panjang : " + balok.keliling());            
             System.out.println("Luas persegi panjang : " + balok.luas());
@@ -39,10 +39,10 @@ public class main {
             
         }
         else if(pilih == 2){
-            System.out.print("Masukkan jari-jari : "); r = input.nextDouble();
+            System.out.print("Masukkan jari-jari : "); jr = input.nextDouble();
             System.out.print("Masukkan tinggi : "); tinggi = input.nextDouble();
             
-            tabung tabung = new tabung(r, tinggi);
+            tabung tabung = new tabung(jr, tinggi);
 
             System.out.println("Keliling lingkaran : " + tabung.keliling());            
             System.out.println("Luas lingkaran : " + tabung.luas());
